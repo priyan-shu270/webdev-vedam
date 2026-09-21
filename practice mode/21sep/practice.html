@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Color Boxes</title>
+    <style>
+        .container {
+            width: 700px;
+            margin: 50px auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .box {
+            border-radius: 5px;
+        }
+
+        .red {
+            background: #c93b35;
+        }
+
+        .green {
+            background: #19d91c;
+        }
+
+        .blue {
+            background: #18b9c5;
+        }
+
+        .yellow {
+            background: #d2b449;
+        }
+
+        .pink {
+            background: #d8c8d1;
+        }
+
+        /* Top */
+        .top {
+            width: 100%;
+            height: 70px;
+        }
+
+        /* Left side */
+        .left {
+            width: 50%;
+            display: flex;
+            gap: 10px;
+        }
+
+        .left1 {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .green {
+            height: 100px;
+        }
+
+        .pink {
+            height: 60px;
+        }
+
+        .blue-big {
+            width: 50%;
+            height: 170px;
+            background: #20bfc5;
+        }
+
+        /* Right side */
+        .right {
+            width: 48%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .small {
+            width: 47%;
+            height: 45px;
+        }
+
+        .bottom {
+            width: 100%;
+            height: 70px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="box red top"></div>
+
+        <div class="left">
+            <div class="left1">
+                <div class="box green"></div>
+                <div class="box pink"></div>
+            </div>
+
+            <div class="box blue-big"></div>
+        </div>
+
+        <div class="right">
+            <div class="box small" style="background:#d5d99c;"></div>
+            <div class="box small" style="background:#159bc5;"></div>
+
+            <div class="box small" style="background:#19b8cf;"></div>
+            <div class="box small" style="background:#c99f31;"></div>
+
+            <div class="box small" style="background:#c99f31;"></div>
+            <div class="box small" style="background:#c8c9b9;"></div>
+        </div>
+
+        <div class="box red bottom"></div>
+
+    </div>
+
+</body>
+</html>
