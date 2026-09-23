@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>madhav shishodia</title>
+<style>
+body{
+    perspective: 900px;
+    background-color: rgb(0, 0, 0);
+}
+#main{
+    width: 400px;
+    height: 470px;
+    margin:50px auto;
+    position: relative;
+    transition: 3s;
+    transform-style: preserve-3d;
+
+}
+
+div{
+  color: aliceblue;
+  text-align: center;
+}
+#card1{
+    width: 100%;
+    height: 50%;
+    background-color: blueviolet;
+    position: absolute;
+    z-index: 1;
+    backface-visibility: hidden;
+    box-shadow: 10px 15px 5px rgb(255, 220, 80);
+    border-radius: 30px;
+
+}
+#main:hover {
+    animation-duration: 3s;
+    animation-name: siu;    
+}
+@keyframes siu{
+    0%{
+        height:500px;
+        
+    }
+    25%{
+        width:600px;
+       
+    }
+    50%{
+        height:650px;
+        width:500px;
+    }
+   
+
+}
+
+#card2{
+    width: 100%;
+    height: 50%;
+    border-radius: 30px;
+    background-color: rgb(43, 226, 110);
+    position:absolute;
+    transform: rotateY(360deg);
+    box-shadow: 10px 10px 50px rgb(241, 40, 40);
+    border-radius: 30px;
+
+}
+#card1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+#card2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+#content{
+    width: 900px;
+    margin: 5px auto;
+    position: relative;
+    top:-140px;
+    text-shadow: 10px 2px 19px rgb(232, 240, 247);
+}
+
+</style>
+
+
+</head>
+<body>
+    
+    <div id="main">
+    <div id="card1"><img src="p.jpg" alt="porsche"></div>
+    <div id="card2"><img src="f.jpg" alt="ferrari"></div>
+    </div>
+    <div id="content">Porsche 911
+The Porsche 911** is one of the most famous and recognizable sports cars in the world. Produced by the German automobile manufacturer Porsche, the 911 was first introduced in 1964 and has remained an important part of Porsche’s identity for more than six decades. Its combination of performance, luxury, technology, and distinctive design has made it popular among car enthusiasts worldwide.
+One of the most recognizable features of the Porsche 911 is its **classic shape**, including its rounded headlights, sloping roofline, and wide rear section. Although Porsche has continuously improved the car, its basic design has remained recognizable across generations. This gives the 911 a unique connection between its history and modern engineering.
+The Porsche 911 is powered by **rear-mounted, horizontally opposed six-cylinder engines**, commonly known as flat-six engines. Depending on the model, the engine can produce several hundred horsepower, allowing the car to accelerate extremely quickly. Different versions are designed for different purposes. For example, the Carrera focuses on everyday performance, while models such as the **Turbo S** provide extremely high performance. The GT3 is especially focused on track driving and handling.
+Inside, the 911 combines a sporty atmosphere with modern technology. It typically features premium materials, advanced displays, comfortable seats, and various driver-assistance and connectivity features.
+Another important quality of the Porsche 911 is its **handling. Its engineering allows it to remain stable and responsive at high speeds while still being practical enough for everyday driving.
+Overall, the Porsche 911 represents a balance between **heritage, engineering, performance, and luxury. Its long history, iconic design, and continuous technological development have helped it become one of the most respected sports cars in automotive history.
+</div>
+</body>
+</html>
