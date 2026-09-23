@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            height: 500px;
+            border: 2px solid;
+             
+        }
+        #main:hover .www{
+            margin-left: 1400px;
+            border-radius: 50%;
+        }
+        .www{
+            transition-duration: 3s;
+        }
+        #a{
+            background-color: bisque;
+            height: 100px;
+            width: 100px;
+            /* transition: 3s; */
+            transition-timing-function: ease-in;
+        }
+         #b{
+            background-color: rgb(97, 64, 23);
+            height: 100px;
+            width: 100px;
+            /* transition: 3s; */
+            transition-timing-function: ease;
+            
+
+        } 
+        #c{
+            background-color: rgb(96, 5, 55);
+            height: 100px;
+            width: 100px;
+            /* transition: 3s; */
+            transition-timing-function: ease-in-out;
+            
+
+        }
+         #d{
+            background-color: rgb(rgb(97, 64, 23));
+            height: 100px;
+            width: 100px;
+            /* transition: 3s; */
+            transition-timing-function: ease-out;
+            
+
+        } 
+        #e{
+            background-color: rgb(190, 15, 50);
+            height: 100px;
+            width: 100px;
+            /* transition: 3s; */
+            transition-timing-function:step-end ;
+            
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="www" id="a"></div>
+        <div class="www" id="b"></div>
+        <div class="www" id="c"></div>
+        <div class="www" id="d"></div>
+        <div class="www" id="e"></div>
+
+    </div>
+</body>
+</html>
