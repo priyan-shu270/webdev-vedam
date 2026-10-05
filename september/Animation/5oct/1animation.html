@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+           /* background-color: blue; */
+           background: linear-gradient(red,blue,pink);
+           margin: 0 auto;
+            border-radius: 50%;
+            border: 5px solid black;
+            animation-name: ball;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+             transition-timing-function: ease-in;
+        }
+        /* div:hover{
+            animation-name: ball;
+            animation-duration: 3s;
+
+            animation-iteration-count: infinite;
+            hover nhi lagya to bina hover kia animation will work
+        } */
+        @keyframes ball {
+            0%{
+                transform: translateY(0vw);
+                /* transition-timing-function: ease-in; */
+            } 
+             100%{
+                transform: translateY(50vw) rotate(360deg);
+                /* transition-timing-function: ease-in; */
+            }     
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>
