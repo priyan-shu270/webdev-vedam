@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#one{
+    height: 50px;
+    width: 100vw;
+    background-color: #111;
+    color: aliceblue;
+    text-align: center;
+    font-size: 24px;
+}
+.navbar {
+    height: 65px;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #111;
+}
+#1{
+  background-size: cover;
+}
