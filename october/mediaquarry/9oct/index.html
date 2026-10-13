@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: rgb(246, 222, 222);
+            height: 100vh;
+            width: 100vw;
+        }
+        @media screen and (max-width:400px) {
+            /* div{
+                background-color: green;
+                border-radius: 50%;
+            } */
+            nav{
+                flex-direction: column;
+                height: fit-content;
+            }
+
+        }
+        *{
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+}
+#navbar{
+    height: 60px;
+    background-color: #181919;
+
+}
+button{
+    background-color: #f08804;
+}
+#logo{
+    color: #f08804;
+    font-size: 25px;
+}
+a{
+    margin-right: 250px;
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <div>
+         <div id="navbar">
+        <a id="logo" href="#">amazon.in</a>
+        <a href="#">Account</a>
+        <a href="#">My cart</a>
+        <a href="#">Contact us</a>
+      
+            <input type="text" placeholder="Search Amazon.in">
+            <button>Search</button>
+    </div>
+</body>
+</html>

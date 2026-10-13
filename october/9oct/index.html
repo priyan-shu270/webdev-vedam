@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #parent{
+            background-color: black;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 5px;
+        }
+        .class{
+            height: 100%;
+            width: 100%;
+            border-radius: 7%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 22px;
+            font-weight: bold;
+
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+        }
+        text{
+            /* display: flex; */
+            /* justify-content: center; */
+            /* text-align: center; */
+            color: white;
+        }
+        #id1{
+            background:linear-gradient( to top, red , blue) ;
+        }
+        #id2{
+            background:linear-gradient( to bottom, red , blue) ;
+        }
+
+        #id3{
+            background:linear-gradient( to left, red , blue) ;
+        }
+        
+        #id4{
+            background:linear-gradient( to right, red , blue) ;,,
+        }
+
+        #id5{
+            background:linear-gradient( to bottom left, red , blue) ;
+        }
+        #id6{
+            background: radial-gradient( red , blue);
+        }
+         #id7{
+            background: radial-gradient( red ,yellow, blue );
+        }
+         #id8{
+            background: radial-gradient( red , blue);
+        }
+         #id9{
+            background: repeating-conic-gradient( red (213, 186, 12) 0deg 20deg
+            ,yellow, blue ,green );
+         }
+        #id9{
+            background: repeating-conic-gradient( red (213, 186, 12) 0deg 20deg
+            ,yellow, blue ,green );}
+
+            
+       
+
+    </style>
+
+</head>
+<body>
+    <div id="parent">
+
+       
+        <div class="class" id="id1">linear-gradient</div>
+        <div class="class" id="id2"></div>
+        <div class="class" id="id3"></div>
+        <div class="class" id="id4"></div>
+        <div class="class" id="id5"></div>
+        <div class="class" id="id6"></div>
+        <div class="class" id="id7"></div>
+        <div class="class" id="id8"></div>
+        <div class="class" id="id9"></div>
+        <div class="class" id="id10"></div>
+        <div class="class" id="id11"></div>
+       <div class="class" id="id12"></div>
+       <div class="class" id="id13"></div>
+       <div class="class" id="id14"></div>
+    </div>
+</body>
+</html>

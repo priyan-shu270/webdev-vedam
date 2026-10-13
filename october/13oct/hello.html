@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Box Animation</title>
+   <style>
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 60vw;
+    height: 30vh;
+    border: 1px solid black;
+    overflow: hidden;
+    margin: 40px auto;
+}
+
+.track {
+    display: flex;
+    width: max-content;
+    animation: slide 5s linear infinite;
+    gap: 20px;
+}
+
+.box {
+width: 300px;
+height: 300px;
+background-color: aqua;
+}
+.group{
+    display: flex;
+    gap: 30px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+   </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="track">
+            <div class="group">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+</div>
+           
+  <div class="group">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
