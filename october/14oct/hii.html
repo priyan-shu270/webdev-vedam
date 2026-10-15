@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Cards</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Poppins', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans flex justify-center items-center min-h-screen bg-[linear-gradient(45deg,#ffaf00,#bb02ff)] bg-fixed">
+    <div class="relative w-[1150px] max-w-full p-5 flex flex-wrap justify-center items-center">
+        <div class="relative w-[300px] h-[420px] m-5 bg-white rounded-[20px] overflow-hidden shadow-[0_15px_25px_rgba(0,0,0,0.2)]">
+            <div class="relative w-full h-full bg-[#ffaf00] [clip-path:circle(180px_at_center_0)] text-center">
+                <h2 class="text-white text-[4.5em] py-[30px]">1</h2>
+            </div>
+            <div class="absolute bottom-[10px] p-5 text-center">
+                <p class="text-[#666]">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="relative inline-block mt-5 px-5 py-2.5 bg-[#ffaf00] text-white rounded-[40px] no-underline">Read More</a>
+            </div>
+        </div>
+
+        
+        <div class="relative w-[300px] h-[420px] m-5 bg-white rounded-[20px] overflow-hidden shadow-[0_15px_25px_rgba(0,0,0,0.2)]">
+            <div class="relative w-full h-full bg-[#da2268] [clip-path:circle(180px_at_center_0)] text-center">
+                <h2 class="text-white text-[4.5em] py-[30px]">2</h2>
+            </div>
+            <div class="absolute bottom-[10px] p-5 text-center">
+                <p class="text-[#666]">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="relative inline-block mt-5 px-5 py-2.5 bg-[#da2268] text-white rounded-[40px] no-underline">Read More</a>
+            </div>
+        </div>
+
+        <div class="relative w-[300px] h-[420px] m-5 bg-white rounded-[20px] overflow-hidden shadow-[0_15px_25px_rgba(0,0,0,0.2)]">
+            <div class="relative w-full h-full bg-[#bb02ff] [clip-path:circle(180px_at_center_0)] text-center">
+                <h2 class="text-white text-[4.5em] py-[30px]">3</h2>
+            </div>
+            <div class="absolute bottom-[10px] p-5 text-center">
+                <p class="text-[#666]">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="relative inline-block mt-5 px-5 py-2.5 bg-[#bb02ff] text-white rounded-[40px] no-underline">Read More</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
