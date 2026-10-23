@@ -30,5 +30,7 @@ let marks = prompt();
 let arr = ["om","jain",5]
 console.log(arr[arr.length-3]);
 
+
+
        
 
