@@ -62,3 +62,117 @@ footer {
     border-radius: 10% 20% 30% 40%;
     box-shadow: 10px 10px 10px grey;
 }
+#ani1{
+            height: 500px;
+            width: 350px;
+            background-color: brown;
+            animation-name: ani1;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            
+        }
+        @keyframes ani1{
+            0%{
+                border-radius: 10% 20% 50% 40%/10% 20% 10% 20%;
+            }
+            25%{
+                border-radius: 20% 30% 70% 10%/20% 60% 20% 40%;
+            }
+             25%{
+                border-radius: 10% 60% 40% 20%/10% 30% 10% 10%;
+            }
+             100%{
+                border-radius: 30% 20% 10% 30%/10% 60% 40% 20%;
+            }
+        }
+        .box {
+    width: 100vw;
+    height: 100px;
+    background-color: rgb(81, 7, 7);
+
+    position: relative;
+    animation: move 3s linear infinite alternate;
+}
+
+@keyframes moveLine {
+    from {
+        transform: translateX(100vw);
+    }
+    to {
+        transform: translateX(-300px);
+    }
+}
+.line-container {
+    width: 100vw;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.red-line {
+    width: 300px;
+    height: 5px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    animation: moveLine 3s linear infinite;
+}
+body {
+    background-color: #e2dde5;
+    font-family: Arial, sans-serif;
+}
+
+.about {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 50px;
+    align-items: start;
+    padding: 100px 6%;
+}
+
+.label {
+    font-size: 13px;
+    color: #cc7979;
+    letter-spacing: 2px;
+}
+
+.heading {
+    font-family: Georgia, serif;
+    font-size: 48px;
+    font-weight: normal;
+    line-height: 1.1;
+}
+
+.red {
+    color: #cf7777;
+}
+
+.description {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.description p {
+    margin-bottom: 25px;
+}
+
+.description a {
+    color: #555;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .about {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 60px 7%;
+    }
+
+    .heading {
+        font-size: 40px;
+    }
+}
