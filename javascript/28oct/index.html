@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h2 id="one" class="two">Hello</h2>
+    <h2 id="one" class="two">h1111</h2>
+     <h2 id="one" class="two">h1111</h2>
+      <h2 id="one" class="two">h1111</h2>
+       <h2 id="one" class="two">h1111</h2>
+        <h2 id="one" class="two">h1111</h2> -->
+
+        <button>Click me!!</button>
+
+    <script>
+ let btn = document.querySelector('button')
+ let body = document.querySelector('body')
+ let a = true
+ btn.onclick=function(){
+    if(a){
+        body.style.backgroundColor='green'
+    a=false
+    //  body.style.backgroundColor='red'
+    }
+     else{
+     body.style.backgroundColor='pink'
+     a = true
+ }
+ }
+
+//    let h2 = document.querySelector("h2")
+//    h2.style.color = 'red'
+// let h1= document.getElementsByClassName("two")
+// for(let i of h1){
+//     i.style.color='red'
+// }
+
+// h1[1].style.color='red'
+
+    //    let h1= document.getElementById("one")
+    //    h1.style.color='pink'
+    //    h1.innerText="byeeeeee"
+    </script>
+</body>
+</html>
